@@ -1,0 +1,398 @@
+{
+    "ess": [
+        {
+            "id": "ess-home-inv-2kw",
+            "name": "Home Inverter Battery 2kW",
+            "category": "ESS",
+            "subcategory": "Home Inverters",
+            "voltage": 48,
+            "capacity": 100,
+            "chemistry": "LFP",
+            "price": 45000,
+            "listPrice": 52000,
+            "specifications": {
+                "voltage": "48V",
+                "capacity": "100Ah",
+                "chemistry": "LFP (Lithium Iron Phosphate)",
+                "cycles": "4000+",
+                "warranty": "5 Years",
+                "dimensions": "450 x 350 x 180 mm",
+                "weight": "28 kg"
+            },
+            "description": "Reliable home inverter backup solution with long cycle life. Perfect for residential power backup during outages. Features advanced BMS for safety and performance.",
+            "features": [
+                "4000+ charge cycles",
+                "Integrated BMS with multiple safety protections",
+                "Fast charging capability (3-4 hours)",
+                "Maintenance-free operation",
+                "Eco-friendly with no lead or acid"
+            ],
+            "applications": [
+                "Home backup",
+                "Residential power",
+                "Solar integration"
+            ],
+            "inStock": true,
+            "rating": 4.8
+        },
+        {
+            "id": "ess-lift-backup-5kw",
+            "name": "Lift Backup System 5kW",
+            "category": "ESS",
+            "subcategory": "Lift Backup",
+            "voltage": 96,
+            "capacity": 150,
+            "chemistry": "LFP",
+            "price": 125000,
+            "listPrice": 145000,
+            "specifications": {
+                "voltage": "96V",
+                "capacity": "150Ah",
+                "chemistry": "LFP",
+                "cycles": "5000+",
+                "warranty": "7 Years",
+                "dimensions": "600 x 450 x 250 mm",
+                "weight": "68 kg"
+            },
+            "description": "Heavy-duty lift backup system ensuring uninterrupted elevator operation. Designed for commercial and residential buildings with high reliability requirements.",
+            "features": [
+                "5000+ charge cycles",
+                "High power output for emergency operations",
+                "Intelligent power management",
+                "Remote monitoring capability",
+                "Compliant with lift safety standards"
+            ],
+            "applications": [
+                "Elevator backup",
+                "Building safety systems",
+                "Emergency power"
+            ],
+            "inStock": true,
+            "rating": 4.9
+        },
+        {
+            "id": "ess-custom-large",
+            "name": "Custom ESS Solution",
+            "category": "ESS",
+            "subcategory": "Custom ESS",
+            "voltage": "Custom",
+            "capacity": "Custom",
+            "chemistry": "LFP/NMC",
+            "price": 0,
+            "listPrice": 0,
+            "specifications": {
+                "voltage": "Customizable",
+                "capacity": "Customizable",
+                "chemistry": "LFP/NMC based on requirements",
+                "cycles": "3000-6000+",
+                "warranty": "5-10 Years",
+                "dimensions": "Custom designed",
+                "weight": "Varies"
+            },
+            "description": "Tailored energy storage solutions for industrial and commercial applications. Fully customizable to meet your specific power requirements.",
+            "features": [
+                "Completely customizable specifications",
+                "Scalable from 10kWh to 1MWh+",
+                "Industrial-grade components",
+                "Advanced monitoring and control systems",
+                "Professional installation and commissioning"
+            ],
+            "applications": [
+                "Industrial power backup",
+                "Solar farms",
+                "Grid stabilization",
+                "Microgrids"
+            ],
+            "inStock": false,
+            "rating": 5.0
+        }
+    ],
+    "mobility": [
+        {
+            "id": "mob-2w-48v-30ah",
+            "name": "2-Wheeler EV Battery 48V 30Ah",
+            "category": "Mobility",
+            "subcategory": "2-Wheeler",
+            "voltage": 48,
+            "capacity": 30,
+            "chemistry": "NMC",
+            "price": 22000,
+            "listPrice": 26000,
+            "specifications": {
+                "voltage": "48V",
+                "capacity": "30Ah",
+                "chemistry": "NMC (Nickel Manganese Cobalt)",
+                "cycles": "1500+",
+                "warranty": "3 Years",
+                "dimensions": "350 x 180 x 150 mm",
+                "weight": "12 kg",
+                "range": "70-90 km"
+            },
+            "description": "High-performance battery for electric scooters and bikes. Lightweight design with excellent range and fast charging support.",
+            "features": [
+                "1500+ charge cycles",
+                "Fast charging: 0-80% in 2 hours",
+                "Smart BMS with smartphone connectivity",
+                "IP67 waterproof rating",
+                "Swappable design for quick battery exchange"
+            ],
+            "applications": [
+                "Electric scooters",
+                "E-bikes",
+                "Delivery vehicles"
+            ],
+            "inStock": true,
+            "rating": 4.7
+        },
+        {
+            "id": "mob-3w-60v-80ah",
+            "name": "3-Wheeler EV Battery 60V 80Ah",
+            "category": "Mobility",
+            "subcategory": "3-Wheeler",
+            "voltage": 60,
+            "capacity": 80,
+            "chemistry": "LFP",
+            "price": 58000,
+            "listPrice": 68000,
+            "specifications": {
+                "voltage": "60V",
+                "capacity": "80Ah",
+                "chemistry": "LFP",
+                "cycles": "3000+",
+                "warranty": "4 Years",
+                "dimensions": "450 x 280 x 220 mm",
+                "weight": "35 kg",
+                "range": "120-150 km"
+            },
+            "description": "Robust battery solution for electric auto-rickshaws and cargo vehicles. Built for Indian roads with excellent durability.",
+            "features": [
+                "3000+ charge cycles",
+                "Heavy-duty construction for commercial use",
+                "Temperature management system",
+                "Real-time diagnostics",
+                "Proven in harsh operating conditions"
+            ],
+            "applications": [
+                "Auto-rickshaws",
+                "Cargo vehicles",
+                "Last-mile delivery"
+            ],
+            "inStock": true,
+            "rating": 4.8
+        },
+        {
+            "id": "mob-forklift-80v-400ah",
+            "name": "Forklift Battery 80V 400Ah",
+            "category": "Mobility",
+            "subcategory": "Forklifts",
+            "voltage": 80,
+            "capacity": 400,
+            "chemistry": "LFP",
+            "price": 380000,
+            "listPrice": 450000,
+            "specifications": {
+                "voltage": "80V",
+                "capacity": "400Ah",
+                "chemistry": "LFP",
+                "cycles": "4000+",
+                "warranty": "6 Years",
+                "dimensions": "950 x 650 x 550 mm",
+                "weight": "420 kg"
+            },
+            "description": "Industrial-grade forklift battery with superior performance and longevity. Replaces traditional lead-acid batteries with zero maintenance.",
+            "features": [
+                "4000+ charge cycles",
+                "Opportunity charging capability",
+                "No watering or maintenance required",
+                "Consistent performance throughout shift",
+                "Lower total cost of ownership"
+            ],
+            "applications": [
+                "Material handling",
+                "Warehouses",
+                "Manufacturing facilities"
+            ],
+            "inStock": true,
+            "rating": 4.9
+        },
+        {
+            "id": "mob-custom-ev",
+            "name": "Custom EV Battery Solution",
+            "category": "Mobility",
+            "subcategory": "Custom EV",
+            "voltage": "Custom",
+            "capacity": "Custom",
+            "chemistry": "LFP/NMC",
+            "price": 0,
+            "listPrice": 0,
+            "specifications": {
+                "voltage": "Customizable",
+                "capacity": "Customizable",
+                "chemistry": "LFP/NMC based on requirements",
+                "cycles": "1500-4000+",
+                "warranty": "3-5 Years",
+                "dimensions": "Custom designed",
+                "weight": "Optimized for application"
+            },
+            "description": "Bespoke battery packs designed for your specific electric vehicle requirements. From concept to production.",
+            "features": [
+                "Application-specific design",
+                "Optimized for weight and performance",
+                "Full engineering support",
+                "Testing and certification assistance",
+                "Flexible manufacturing volumes"
+            ],
+            "applications": [
+                "Custom EVs",
+                "Prototype vehicles",
+                "Specialized applications"
+            ],
+            "inStock": false,
+            "rating": 5.0
+        }
+    ],
+    "specialized": [
+        {
+            "id": "spec-ups-12v-20ah",
+            "name": "PC UPS Battery 12V 20Ah",
+            "category": "Specialized",
+            "subcategory": "PC UPS",
+            "voltage": 12,
+            "capacity": 20,
+            "chemistry": "LFP",
+            "price": 4500,
+            "listPrice": 5500,
+            "specifications": {
+                "voltage": "12V",
+                "capacity": "20Ah",
+                "chemistry": "LFP",
+                "cycles": "2000+",
+                "warranty": "3 Years",
+                "dimensions": "180 x 76 x 167 mm",
+                "weight": "1.8 kg"
+            },
+            "description": "Lightweight and long-lasting UPS battery for computers and networking equipment. Drop-in replacement for lead-acid batteries.",
+            "features": [
+                "2000+ charge cycles",
+                "3x lighter than lead-acid",
+                "Longer backup time",
+                "No toxic materials",
+                "Plug-and-play compatibility"
+            ],
+            "applications": [
+                "Computer UPS",
+                "Network equipment",
+                "Security systems"
+            ],
+            "inStock": true,
+            "rating": 4.6
+        },
+        {
+            "id": "spec-solar-street-24v-50ah",
+            "name": "Solar Streetlight Battery 24V 50Ah",
+            "category": "Specialized",
+            "subcategory": "Solar Lights",
+            "voltage": 24,
+            "capacity": 50,
+            "chemistry": "LFP",
+            "price": 18000,
+            "listPrice": 22000,
+            "specifications": {
+                "voltage": "24V",
+                "capacity": "50Ah",
+                "chemistry": "LFP",
+                "cycles": "3500+",
+                "warranty": "5 Years",
+                "dimensions": "350 x 180 x 180 mm",
+                "weight": "8 kg"
+            },
+            "description": "Durable battery for solar streetlights with excellent deep-cycle performance. Weather-resistant construction for outdoor applications.",
+            "features": [
+                "3500+ charge cycles",
+                "Wide operating temperature range",
+                "IP65 weather protection",
+                "Smart charge controller compatible",
+                "Multi-day autonomy capability"
+            ],
+            "applications": [
+                "Solar streetlights",
+                "Off-grid lighting",
+                "Garden lights"
+            ],
+            "inStock": true,
+            "rating": 4.7
+        },
+        {
+            "id": "spec-drone-22v-15ah",
+            "name": "Drone Battery 22.2V 15Ah",
+            "category": "Specialized",
+            "subcategory": "Drones",
+            "voltage": 22.2,
+            "capacity": 15,
+            "chemistry": "NMC",
+            "price": 12000,
+            "listPrice": 15000,
+            "specifications": {
+                "voltage": "22.2V (6S)",
+                "capacity": "15Ah",
+                "chemistry": "NMC",
+                "cycles": "500+",
+                "warranty": "1 Year",
+                "dimensions": "150 x 65 x 45 mm",
+                "weight": "0.95 kg",
+                "cRating": "15C continuous, 30C burst"
+            },
+            "description": "High discharge rate battery for professional drones. Optimized for flight time and reliability.",
+            "features": [
+                "High discharge capability",
+                "Lightweight for extended flight time",
+                "Built-in balancer",
+                "Temperature monitoring",
+                "Aviation-grade safety"
+            ],
+            "applications": [
+                "Agricultural drones",
+                "Surveying",
+                "Aerial photography"
+            ],
+            "inStock": true,
+            "rating": 4.8
+        },
+        {
+            "id": "spec-micro-3v-2ah",
+            "name": "Micro Battery Pack 3.7V 2Ah",
+            "category": "Specialized",
+            "subcategory": "Micro Packs",
+            "voltage": 3.7,
+            "capacity": 2,
+            "chemistry": "Li-ion",
+            "price": 450,
+            "listPrice": 600,
+            "specifications": {
+                "voltage": "3.7V",
+                "capacity": "2Ah (2000mAh)",
+                "chemistry": "Li-ion",
+                "cycles": "500+",
+                "warranty": "1 Year",
+                "dimensions": "65 x 35 x 8 mm",
+                "weight": "45 g"
+            },
+            "description": "Compact battery pack for small consumer electronics. Perfect for toys, personal grooming devices, and portable gadgets.",
+            "features": [
+                "Compact and lightweight",
+                "Protection circuit included",
+                "Rechargeable via micro-USB",
+                "Safe for consumer products",
+                "CE certified"
+            ],
+            "applications": [
+                "Electronic toys",
+                "Shaving machines",
+                "Portable fans",
+                "LED devices"
+            ],
+            "inStock": true,
+            "rating": 4.5
+        }
+    ]
+}
