@@ -36,7 +36,7 @@ export default function Header() {
                 <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-20">
                         {/* Logo */}
-                        <Link to="/" className="flex items-center space-x-3">
+                        <Link to="/" className="flex items-center gap-3">
                             <img
                                 src="/logo.png"
                                 alt="DC Energy"
@@ -49,14 +49,14 @@ export default function Header() {
                         </Link>
 
                         {/* Desktop Navigation */}
-                        <div className="hidden md:flex items-center space-x-8">
+                        <div className="hidden md:flex items-center gap-8">
                             {navLinks.map((link) => (
                                 <a
                                     key={link.name}
                                     href={link.path}
                                     className={`text-sm font-medium transition-colors hover:text-brand-green-400 ${isActive(link.path)
-                                            ? 'text-brand-green-400'
-                                            : 'text-white'
+                                        ? 'text-brand-green-400'
+                                        : 'text-white'
                                         }`}
                                 >
                                     {link.name}
@@ -65,7 +65,7 @@ export default function Header() {
                         </div>
 
                         {/* Cart & Mobile Menu */}
-                        <div className="flex items-center space-x-4">
+                        <div className="flex items-center gap-4">
                             {/* Cart Icon */}
                             <button
                                 onClick={openCart}
@@ -100,8 +100,8 @@ export default function Header() {
                                     href={link.path}
                                     onClick={() => setIsMenuOpen(false)}
                                     className={`block py-2 text-sm font-medium transition-colors hover:text-brand-green-400 ${isActive(link.path)
-                                            ? 'text-brand-green-400'
-                                            : 'text-white'
+                                        ? 'text-brand-green-400'
+                                        : 'text-white'
                                         }`}
                                 >
                                     {link.name}
