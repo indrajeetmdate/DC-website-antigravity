@@ -14,8 +14,8 @@ export default function Header() {
         { name: 'Home', path: '/' },
         { name: 'Products', path: '/#products' },
         { name: 'Store', path: '/store' },
-        { name: 'About', path: '/#about' },
-        { name: 'Contact', path: '/#contact' },
+        { name: 'About', path: '/about' },
+        { name: 'Contact', path: '/contact' },
     ]
 
     const isActive = (path) => {
@@ -42,25 +42,21 @@ export default function Header() {
                                 alt="DC Energy"
                                 className="h-12 w-auto brightness-0 invert"
                             />
-                            <div className="text-white">
-                                <div className="font-display text-xl font-bold">DC ENERGY</div>
-                                <div className="text-xs text-brand-green-400">Truly Made in India</div>
-                            </div>
                         </Link>
 
                         {/* Desktop Navigation */}
                         <div className="hidden md:flex items-center gap-8">
                             {navLinks.map((link) => (
-                                <a
+                                <Link
                                     key={link.name}
-                                    href={link.path}
+                                    to={link.path}
                                     className={`text-sm font-medium transition-colors hover:text-brand-green-400 ${isActive(link.path)
                                         ? 'text-brand-green-400'
                                         : 'text-white'
                                         }`}
                                 >
                                     {link.name}
-                                </a>
+                                </Link>
                             ))}
                         </div>
 
@@ -95,9 +91,9 @@ export default function Header() {
                     {isMenuOpen && (
                         <div className="md:hidden py-4 border-t border-brand-green-500/20">
                             {navLinks.map((link) => (
-                                <a
+                                <Link
                                     key={link.name}
-                                    href={link.path}
+                                    to={link.path}
                                     onClick={() => setIsMenuOpen(false)}
                                     className={`block py-2 text-sm font-medium transition-colors hover:text-brand-green-400 ${isActive(link.path)
                                         ? 'text-brand-green-400'
@@ -105,7 +101,7 @@ export default function Header() {
                                         }`}
                                 >
                                     {link.name}
-                                </a>
+                                </Link>
                             ))}
                         </div>
                     )}

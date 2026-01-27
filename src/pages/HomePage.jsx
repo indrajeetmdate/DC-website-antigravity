@@ -10,8 +10,6 @@ export default function HomePage() {
             <Hero />
             <ProductShowcase />
             <CellToCircuit />
-            <Team />
-            <TechnicalSpecs />
         </>
     )
 }
