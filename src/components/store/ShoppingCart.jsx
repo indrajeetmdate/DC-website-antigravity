@@ -150,11 +150,20 @@ export default function ShoppingCart() {
                                     </div>
                                 </div>
 
-                                <Link to="/checkout" onClick={closeCart}>
-                                    <Button color="success" size="lg" className="w-full font-semibold">
+                                <div className="w-full">
+                                    <Button
+                                        color="success"
+                                        size="lg"
+                                        className="w-full font-semibold"
+                                        onClick={() => {
+                                            closeCart()
+                                            // Small delay to ensure cart animation starts closing before navigation
+                                            setTimeout(() => window.location.href = '/checkout', 100)
+                                        }}
+                                    >
                                         Proceed to Checkout
                                     </Button>
-                                </Link>
+                                </div>
 
                                 <button
                                     onClick={closeCart}

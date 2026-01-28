@@ -39,7 +39,7 @@ export default function FeaturedProducts() {
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
                         >
-                            <Card className="hover:shadow-xl transition-shadow duration-300 h-full">
+                            <Card className="hover:shadow-xl transition-shadow duration-300 h-full border border-gray-200">
                                 <CardHeader className="flex-col items-start pb-0 pt-6 px-6">
                                     <div className="flex justify-between items-start w-full mb-2">
                                         <div>

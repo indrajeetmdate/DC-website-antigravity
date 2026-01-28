@@ -117,7 +117,7 @@ export default function Team() {
 
                 {/* Legacy Note */}
                 <motion.div
-                    className="mt-16 text-center bg-gradient-to-r from-brand-green-50 to-green-50 rounded-2xl p-8 border border-brand-green-200"
+                    className="mt-24 text-center bg-gradient-to-r from-brand-green-50 to-green-50 rounded-2xl p-8 border border-brand-green-200 relative z-10"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
@@ -132,13 +132,6 @@ export default function Team() {
                     </p>
                 </motion.div>
             </div>
-
-            <style>{`
-        .MuiCard-root {
-          position: relative;
-          margin-top: 3rem;
-        }
-      `}</style>
         </section>
     )
 }

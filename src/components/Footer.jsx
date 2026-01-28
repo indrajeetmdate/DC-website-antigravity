@@ -19,7 +19,7 @@ export default function Footer() {
                             Engineering excellence in lithium battery technology. Truly Made in India.
                         </p>
                         <div className="mt-4 flex items-center space-x-2">
-                            <img src="/logo.png" alt="Indian Flag" className="h-4 brightness-0 invert opacity-50" />
+                            <img src="/DC_Logo.png" alt="DC Energy" className="h-6 w-auto opacity-80" />
                             <span className="text-xs text-brand-green-400 font-semibold">Proudly Made in India</span>
                         </div>
                     </div>
