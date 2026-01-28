@@ -63,7 +63,7 @@ export default function ProductDetail() {
 
     const benefits = [
         { icon: Truck, text: 'Free shipping on orders above ₹1 lakh' },
-        { icon: Shield, text: `${product.specifications.warranty} warranty included` },
+        { icon: Shield, text: `${product?.specifications?.warranty || 'Standard'} warranty included` },
         { icon: RotateCcw, text: '7-day return policy' },
     ]
 
@@ -90,8 +90,8 @@ export default function ProductDetail() {
                         <div className="relative aspect-square bg-gradient-to-br from-brand-green-100 to-brand-green-50 rounded-2xl flex items-center justify-center">
                             <div className="w-64 h-64 bg-gradient-to-br from-brand-green-500 to-brand-green-600 rounded-3xl flex items-center justify-center shadow-2xl">
                                 <div className="text-center text-white">
-                                    <div className="font-display text-7xl font-bold mb-2">{product.voltage}V</div>
-                                    <div className="text-2xl font-semibold">{product.specifications.capacity}</div>
+                                    <div className="font-display text-7xl font-bold mb-2">{product?.voltage || ''}V</div>
+                                    <div className="text-2xl font-semibold">{product?.specifications?.capacity || ''}</div>
                                 </div>
                             </div>
 
@@ -129,8 +129,8 @@ export default function ProductDetail() {
                                         <Star
                                             key={i}
                                             className={`w-5 h-5 ${i < Math.floor(product.rating)
-                                                    ? 'fill-yellow-400 text-yellow-400'
-                                                    : 'text-gray-300'
+                                                ? 'fill-yellow-400 text-yellow-400'
+                                                : 'text-gray-300'
                                                 }`}
                                         />
                                     ))}
@@ -241,7 +241,7 @@ export default function ProductDetail() {
                 <div className="bg-white rounded-2xl shadow-xl p-8 mb-16">
                     <h2 className="font-display text-2xl font-bold mb-6">Technical Specifications</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {Object.entries(product.specifications).map(([key, value]) => (
+                        {product?.specifications && Object.entries(product.specifications).map(([key, value]) => (
                             <div key={key} className="border-l-4 border-brand-green-500 pl-4">
                                 <dt className="text-sm text-gray-500 capitalize mb-1">
                                     {key.replace(/([A-Z])/g, ' $1').trim()}

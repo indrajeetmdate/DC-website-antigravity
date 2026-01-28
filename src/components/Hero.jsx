@@ -15,8 +15,8 @@ export default function Hero() {
                         key={i}
                         className="absolute w-2 h-2 bg-brand-green-500 rounded-full"
                         style={{
-                            left: `${Math.random() * 100}%`,
-                            top: `${Math.random() * 100}%`,
+                            left: `${Math.random() * 95}%`,
+                            top: `${Math.random() * 95}%`,
                         }}
                         animate={{
                             y: [0, -30, 0],

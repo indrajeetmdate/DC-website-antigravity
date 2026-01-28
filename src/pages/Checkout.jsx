@@ -43,14 +43,61 @@ export default function Checkout() {
         )
     }
 
-    const onSubmit = (data) => {
+    const loadScript = (src) => {
+        return new Promise((resolve) => {
+            const script = document.createElement('script')
+            script.src = src
+            script.onload = () => {
+                resolve(true)
+            }
+            script.onerror = () => {
+                resolve(false)
+            }
+            document.body.appendChild(script)
+        })
+    }
+
+    const onSubmit = async (data) => {
         if (currentStep < 4) {
             setCurrentStep(currentStep + 1)
         } else {
-            // Simulate order placement
-            toast.success('Order placed successfully!')
-            clearCart()
-            navigate('/order-success')
+            // Razorpay Integration
+            const res = await loadScript('https://checkout.razorpay.com/v1/checkout.js')
+
+            if (!res) {
+                toast.error('Razorpay SDK failed to load. Are you online?')
+                return
+            }
+
+            const options = {
+                key: import.meta.env.VITE_RAZORPAY_KEY_ID || 'test_key_id', // Replace with your actual key
+                amount: total * 100,
+                currency: 'INR',
+                name: 'DC Energy',
+                description: 'Order Payment',
+                image: '/DC_Logo.png',
+                handler: function (response) {
+                    toast.success('Payment Successful!')
+                    clearCart()
+                    navigate('/order-success')
+                },
+                prefill: {
+                    name: data.fullName,
+                    email: data.email,
+                    contact: data.phone
+                },
+                theme: {
+                    color: '#22c55e'
+                }
+            }
+
+            try {
+                const paymentObject = new window.Razorpay(options)
+                paymentObject.open()
+            } catch (err) {
+                toast.error('Something went wrong with payment initialization')
+                console.error(err)
+            }
         }
     }
 
@@ -84,10 +131,10 @@ export default function Checkout() {
                                 <div key={step.number} className="flex flex-col items-center relative z-10">
                                     <div
                                         className={`w-16 h-16 rounded-full flex items-center justify-center mb-2 transition-all ${isComplete
-                                                ? 'bg-brand-green-500 text-white'
-                                                : isActive
-                                                    ? 'bg-brand-green-500 text-white ring-4 ring-brand-green-200'
-                                                    : 'bg-white border-2 border-gray-300 text-gray-400'
+                                            ? 'bg-brand-green-500 text-white'
+                                            : isActive
+                                                ? 'bg-brand-green-500 text-white ring-4 ring-brand-green-200'
+                                                : 'bg-white border-2 border-gray-300 text-gray-400'
                                             }`}
                                     >
                                         {isComplete ? <Check className="w-8 h-8" /> : <Icon className="w-8 h-8" />}
