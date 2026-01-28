@@ -40,7 +40,7 @@ export default function Header() {
                             <img
                                 src="/DC_Logo.png"
                                 alt="DC Energy"
-                                className="h-12 w-auto brightness-0 invert"
+                                className="h-12 w-auto"
                             />
                         </Link>
 
