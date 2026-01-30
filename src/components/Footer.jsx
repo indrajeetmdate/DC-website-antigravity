@@ -1,68 +1,73 @@
+import React from 'react'
 import { Link } from 'react-router-dom'
-import { Battery, Mail, Phone, MapPin } from 'lucide-react'
+import { MapPin, Mail, Phone, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react'
 
 export default function Footer() {
     return (
-        <footer className="bg-brand-dark-900 text-white border-t border-brand-green-500/20">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                    {/* Company Info */}
+        <footer className="bg-brand-dark-950 border-t border-brand-dark-800 pt-16 pb-8">
+            <div className="container mx-auto px-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                    {/* Brand Column */}
                     <div>
-                        <div className="flex items-center space-x-2 mb-4">
-                            <Battery className="h-8 w-8 text-brand-green-500" />
-                            <div>
-                                <div className="font-display text-lg font-bold">DC ENERGY</div>
-                                <div className="text-xs text-brand-green-400">Datlion Cnergy Pvt. Ltd.</div>
-                            </div>
-                        </div>
-                        <p className="text-sm text-gray-400">
-                            Engineering excellence in lithium battery technology. Truly Made in India.
+                        <Link to="/" className="inline-block mb-6">
+                            <img
+                                src="/logo.png"
+                                alt="DC Energy"
+                                className="h-12 w-auto brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
+                            />
+                        </Link>
+                        <p className="text-gray-400 text-sm leading-relaxed mb-6">
+                            Driving India's energy revolution with scientifically engineered lithium-ion solutions.
+                            Built on IIT Kanpur excellence and 35+ years of industry legacy.
                         </p>
-                        <div className="mt-4 flex items-center space-x-2">
-                            <img src="/DC_Logo.png" alt="DC Energy" className="h-6 w-auto opacity-80" />
-                            <span className="text-xs text-brand-green-400 font-semibold">Proudly Made in India</span>
+                        <div className="flex items-center gap-4">
+                            <SocialLink icon={Linkedin} href="#" />
+                            <SocialLink icon={Twitter} href="#" />
+                            <SocialLink icon={Facebook} href="#" />
+                            <SocialLink icon={Instagram} href="#" />
                         </div>
                     </div>
 
                     {/* Quick Links */}
                     <div>
-                        <h3 className="font-display text-lg font-semibold mb-4">Quick Links</h3>
-                        <ul className="space-y-2 text-sm">
-                            <li><Link to="/" className="text-gray-400 hover:text-brand-green-400 transition-colors">Home</Link></li>
-                            <li><Link to="/store" className="text-gray-400 hover:text-brand-green-400 transition-colors">Store</Link></li>
-                            <li><a href="/#products" className="text-gray-400 hover:text-brand-green-400 transition-colors">Products</a></li>
-                            <li><a href="/#about" className="text-gray-400 hover:text-brand-green-400 transition-colors">About Us</a></li>
-                            <li><a href="/#team" className="text-gray-400 hover:text-brand-green-400 transition-colors">Our Team</a></li>
+                        <h4 className="text-white font-display font-semibold text-lg mb-6">Quick Links</h4>
+                        <ul className="space-y-3">
+                            <FooterLink to="/" label="Home" />
+                            <FooterLink to="/about" label="About Us" />
+                            <FooterLink to="/store" label="Store" />
+                            <FooterLink to="/contact" label="Contact" />
+                            <FooterLink to="/#products" label="Products" />
                         </ul>
                     </div>
 
                     {/* Products */}
                     <div>
-                        <h3 className="font-display text-lg font-semibold mb-4">Products</h3>
-                        <ul className="space-y-2 text-sm text-gray-400">
-                            <li>Energy Storage Systems</li>
-                            <li>Mobility Solutions</li>
-                            <li>2W/3W EV Batteries</li>
-                            <li>Forklift Batteries</li>
-                            <li>Solar Lighting</li>
-                            <li>Custom Solutions</li>
+                        <h4 className="text-white font-display font-semibold text-lg mb-6">Solutions</h4>
+                        <ul className="space-y-3">
+                            <FooterLink to="/store?category=ess" label="Energy Storage Systems" />
+                            <FooterLink to="/store?category=mobility" label="EV Mobility" />
+                            <FooterLink to="/store?category=specialized" label="Specialized Batteries" />
+                            <FooterLink to="/store" label="Custom Packs" />
                         </ul>
                     </div>
 
                     {/* Contact */}
                     <div>
-                        <h3 className="font-display text-lg font-semibold mb-4">Contact Us</h3>
-                        <ul className="space-y-3 text-sm text-gray-400">
-                            <li className="flex items-start space-x-2">
-                                <MapPin className="h-5 w-5 text-brand-green-500 flex-shrink-0 mt-0.5" />
-                                <span>Pune, Maharashtra, India</span>
+                        <h4 className="text-white font-display font-semibold text-lg mb-6">Contact Us</h4>
+                        <ul className="space-y-4">
+                            <li className="flex items-start gap-3 text-gray-400 text-sm">
+                                <MapPin className="w-5 h-5 text-brand-green-500 flex-shrink-0 mt-0.5" />
+                                <span>
+                                    Plot No. 123, DC Energy Tech Park,<br />
+                                    MIDC Bhosari, Pune - 411026
+                                </span>
                             </li>
-                            <li className="flex items-center space-x-2">
-                                <Phone className="h-5 w-5 text-brand-green-500 flex-shrink-0" />
-                                <span>+91 XXXX XXXXXX</span>
+                            <li className="flex items-center gap-3 text-gray-400 text-sm">
+                                <Phone className="w-5 h-5 text-brand-green-500 flex-shrink-0" />
+                                <span>+91 98765 43210</span>
                             </li>
-                            <li className="flex items-center space-x-2">
-                                <Mail className="h-5 w-5 text-brand-green-500 flex-shrink-0" />
+                            <li className="flex items-center gap-3 text-gray-400 text-sm">
+                                <Mail className="w-5 h-5 text-brand-green-500 flex-shrink-0" />
                                 <span>info@dcenergy.in</span>
                             </li>
                         </ul>
@@ -70,13 +75,42 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-                    <p>© {new Date().getFullYear()} Datlion Cnergy Pvt. Ltd. All rights reserved.</p>
-                    <p className="mt-2">
-                        <span className="text-brand-green-400">IIT Kanpur Scientific Foundation</span> | 35+ Years of Business Legacy
-                    </p>
+                <div className="border-t border-brand-dark-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+                    <p>&copy; {new Date().getFullYear()} Datlion Cnergy Pvt. Ltd. All rights reserved.</p>
+                    <div className="flex items-center gap-6">
+                        <Link to="#" className="hover:text-brand-green-400 transition-colors">Privacy Policy</Link>
+                        <Link to="#" className="hover:text-brand-green-400 transition-colors">Terms of Service</Link>
+                        <span className="flex items-center gap-1.5 text-brand-green-500 font-medium">
+                            <span className="w-1.5 h-1.5 rounded-full bg-brand-green-500"></span>
+                            Truly Made in India
+                        </span>
+                    </div>
                 </div>
             </div>
         </footer>
+    )
+}
+
+function FooterLink({ to, label }) {
+    return (
+        <li>
+            <Link
+                to={to}
+                className="text-gray-400 hover:text-brand-green-400 transition-colors text-sm"
+            >
+                {label}
+            </Link>
+        </li>
+    )
+}
+
+function SocialLink({ icon: Icon, href }) {
+    return (
+        <a
+            href={href}
+            className="w-8 h-8 rounded-full bg-brand-dark-800 flex items-center justify-center text-gray-400 hover:bg-brand-green-500 hover:text-white transition-all duration-300"
+        >
+            <Icon className="w-4 h-4" />
+        </a>
     )
 }
