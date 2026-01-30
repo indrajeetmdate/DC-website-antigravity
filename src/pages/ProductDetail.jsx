@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { ArrowLeft, ShoppingCart, Shield, Truck, RotateCcw, Star, Share2, Heart, CheckCircle } from 'lucide-react'
 import productsData from '../data/products.json'
 import useCartStore from '../store/cartStore'
-import { Toaster, fb } from 'sonner' // Ensure sonner is installed or remove if not. Package.json says sonner^2.0.7 is there.
+import { Toaster } from 'sonner' // Ensure sonner is installed or remove if not. Package.json says sonner^2.0.7 is there.
 import { toast } from 'sonner'
 
 export default function ProductDetail() {

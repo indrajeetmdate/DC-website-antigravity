@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BatteryCo - Hero</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec6d",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#0f172a", /* Deep slate for premium feel */
+                        "surface-dark": "#1e293b",
+                        "glass": "rgba(15, 23, 42, 0.7)",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.375rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom Utilities for that Magic UI / Shadcn feel */
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(to right, white, #a8a8a8);
+        }
+
+        .hover-card-glow:hover {
+            box-shadow: 0 0 20px -5px rgba(19, 236, 109, 0.15);
+            border-color: rgba(19, 236, 109, 0.3);
+        }
+
+        /* Smooth reveal for content */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-up {
+            animation: fadeUp 0.8s ease-out forwards;
+        }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display antialiased selection:bg-primary selection:text-background-dark overflow-x-hidden">
+<!-- Ambient Background Glows -->
+<div class="fixed inset-0 pointer-events-none overflow-hidden -z-10">
+<div class="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-primary/5 rounded-full blur-[100px]"></div>
+</div>
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-background-dark/80 backdrop-blur-md transition-all duration-300">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Logo -->
+<div class="flex items-center gap-3 group cursor-pointer">
+<div class="relative flex items-center justify-center w-10 h-10 rounded-xl bg-primary/10 text-primary border border-primary/20 group-hover:bg-primary group-hover:text-background-dark transition-all duration-300">
+<span class="material-symbols-outlined text-[24px]">bolt</span>
+</div>
+<span class="font-bold text-xl tracking-tight text-white group-hover:text-primary transition-colors">BatteryCo</span>
+</div>
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-slate-300 hover:text-white transition-colors" href="#">Products</a>
+<a class="text-sm font-medium text-slate-300 hover:text-white transition-colors" href="#">Technology</a>
+<a class="text-sm font-medium text-slate-300 hover:text-white transition-colors" href="#">About</a>
+<a class="text-sm font-medium text-slate-300 hover:text-white transition-colors" href="#">Sustainability</a>
+</div>
+<!-- CTA -->
+<div class="flex items-center gap-4">
+<button class="hidden sm:flex items-center justify-center h-10 px-5 rounded-lg bg-primary text-background-dark text-sm font-bold hover:bg-primary/90 hover:scale-[1.02] transition-all active:scale-[0.98]">
+                    Contact Us
+                </button>
+<button class="md:hidden p-2 text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content Wrapper -->
+<main class="relative flex flex-col items-center justify-center min-h-screen pt-24 pb-12 px-6">
+<div class="max-w-7xl w-full mx-auto grid lg:grid-cols-2 gap-12 items-center">
+<!-- Text Content -->
+<div class="flex flex-col gap-8 max-w-2xl animate-fade-up">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/20 bg-primary/5 w-fit">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="text-xs font-medium text-primary tracking-wide uppercase">Series A Funding Secured</span>
+</div>
+<div class="space-y-4">
+<h1 class="text-5xl lg:text-7xl font-bold leading-[1.1] tracking-tight text-gradient">
+                        Energy Without <br/>
+<span class="text-white relative">
+                            Compromise
+                            <svg class="absolute w-full h-3 -bottom-1 left-0 text-primary opacity-60" fill="none" viewbox="0 0 200 9" xmlns="http://www.w3.org/2000/svg"><path d="M2.00025 6.99997C25.7509 9.37523 54.9585 9.37523 203.221 1.41163" stroke="currentColor" stroke-width="3"></path></svg>
+</span>
+</h1>
+<p class="text-lg text-slate-400 font-body leading-relaxed max-w-lg delay-100 animate-fade-up">
+                        Next-generation battery cells designed for grid resilience and electric mobility. We engineer the storage solutions that make renewable energy reliable, scalable, and safe.
+                    </p>
+</div>
+<div class="flex flex-wrap items-center gap-4 delay-200 animate-fade-up">
+<button class="h-12 px-8 rounded-lg bg-primary text-background-dark font-bold text-base hover:bg-[#34fc89] hover:shadow-[0_0_20px_-5px_#13ec6d] transition-all duration-300 flex items-center gap-2">
+                        Discover the Tech
+                        <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+<button class="h-12 px-8 rounded-lg border border-white/10 bg-white/5 text-white font-medium text-base hover:bg-white/10 transition-all flex items-center gap-2">
+<span class="material-symbols-outlined filled text-primary">play_circle</span>
+                        Watch the Film
+                    </button>
+</div>
+<!-- Trust Bar / Social Proof -->
+<div class="pt-8 border-t border-white/5 delay-300 animate-fade-up">
+<p class="text-sm text-slate-500 font-medium mb-4 uppercase tracking-wider">Trusted by industry leaders</p>
+<div class="flex flex-wrap gap-8 items-center opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
+<!-- Placeholder SVGs for logos -->
+<div class="h-8 w-auto">
+<svg class="h-full w-auto text-white" fill="currentColor" viewbox="0 0 100 30"><path d="M10,15 L20,5 L30,15 L20,25 Z M40,5 H50 V25 H40 Z M60,5 H80 V10 H65 V12 H75 V17 H65 V25 H60 Z"></path></svg>
+</div>
+<div class="h-8 w-auto">
+<svg class="h-full w-auto text-white" fill="currentColor" viewbox="0 0 100 30"><circle cx="15" cy="15" r="10"></circle> <rect height="20" width="10" x="35" y="5"></rect> <rect height="5" width="30" x="55" y="5"></rect> <rect height="5" width="20" x="55" y="12"></rect> <rect height="5" width="30" x="55" y="20"></rect></svg>
+</div>
+<div class="h-8 w-auto">
+<svg class="h-full w-auto text-white" fill="currentColor" viewbox="0 0 100 30"><path d="M10,25 L20,5 L30,25 M15,18 H25" stroke="currentColor" stroke-width="3"></path> <path d="M40,5 L60,5 L50,25 Z"></path> <circle cx="80" cy="15" r="8"></circle></svg>
+</div>
+<div class="h-6 w-auto hidden sm:block">
+<svg class="h-full w-auto text-white" fill="currentColor" viewbox="0 0 100 30"><rect height="20" width="20" x="10" y="5"></rect> <rect height="20" width="5" x="40" y="5"></rect> <rect height="20" width="5" x="55" y="5"></rect> <path d="M70,5 L90,15 L70,25" fill="none" stroke="currentColor" stroke-width="3"></path></svg>
+</div>
+</div>
+</div>
+</div>
+<!-- Visual / Feature Cards Preview -->
+<div class="relative lg:h-[600px] flex items-center justify-center animate-fade-up delay-200">
+<!-- Abstract Visual Element -->
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-center bg-no-repeat bg-contain" data-alt="Abstract 3D rendering of glowing green energy particles flowing in a dark space representing battery technology" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBc87nkHxVx1VVY60uITDfK16PNYVg7RXnrzXIC5D-YqCxvLlG_DKnwdBBf2-8nBNKVpIGCdkhyuhN16w9EtZL-2okfqCDSokv9FNLOTgfjbeyPftXvzKZl5LCNQFJIGVktOj0caZDm-s3ixTNgGSlRBdpIDEceBrfe49sxD2nSp82GdmK8l6QWadmULlu7RgQiv638ddH1TEQZW51feWeY3cab3fTLNPIUzarJIqHRaF9Hbm1Z5HsNyPYpf5GOdgsOAs2MzOcMrj0'); opacity: 0.6; mix-blend-mode: lighten;">
+</div>
+<!-- Gradient overlay to blend image -->
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/20 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-l from-background-dark via-transparent to-transparent"></div>
+</div>
+<!-- Floating Cards Grid (Feature Teaser) -->
+<div class="relative z-10 w-full grid grid-cols-1 sm:grid-cols-2 gap-4 mt-20 lg:mt-0">
+<!-- Card 1 -->
+<div class="glass-panel p-6 rounded-2xl hover-card-glow transition-all duration-300 transform hover:-translate-y-1 cursor-default sm:col-span-2 lg:col-span-2">
+<div class="flex items-start justify-between mb-4">
+<div class="p-2 rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+<span class="text-xs font-mono text-primary/60 border border-primary/20 rounded px-2 py-0.5">TECH-01</span>
+</div>
+<h3 class="text-xl font-bold text-white mb-2">Solid State Safety</h3>
+<p class="text-sm text-slate-400">Our ceramic electrolyte eliminates fire risk completely, operating safely up to 200°C with zero thermal runaway.</p>
+</div>
+<!-- Card 2 -->
+<div class="glass-panel p-6 rounded-2xl hover-card-glow transition-all duration-300 transform hover:-translate-y-1 cursor-default">
+<div class="flex items-start justify-between mb-4">
+<div class="p-2 rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined">recycling</span>
+</div>
+</div>
+<h3 class="text-lg font-bold text-white mb-1">98% Recyclability</h3>
+<p class="text-xs text-slate-400">Closed-loop manufacturing ensures materials live forever.</p>
+</div>
+<!-- Card 3 -->
+<div class="glass-panel p-6 rounded-2xl hover-card-glow transition-all duration-300 transform hover:-translate-y-1 cursor-default">
+<div class="flex items-start justify-between mb-4">
+<div class="p-2 rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined">speed</span>
+</div>
+</div>
+<h3 class="text-lg font-bold text-white mb-1">2x Density</h3>
+<p class="text-xs text-slate-400">500 Wh/kg energy density for longer range and lighter builds.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Feature Strip (Optional, to ground the page) -->
+<section class="border-t border-white/5 bg-surface-dark/30 py-12">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+<div>
+<h4 class="text-white font-bold text-lg">Ready to electrify?</h4>
+<p class="text-slate-400 text-sm">Join the renewable revolution with our modular platform.</p>
+</div>
+<div class="flex gap-8">
+<div class="flex flex-col">
+<span class="text-3xl font-bold text-white font-display">15+</span>
+<span class="text-xs text-slate-500 uppercase tracking-wider">Patents</span>
+</div>
+<div class="flex flex-col">
+<span class="text-3xl font-bold text-white font-display">500M</span>
+<span class="text-xs text-slate-500 uppercase tracking-wider">Cells Produced</span>
+</div>
+<div class="flex flex-col">
+<span class="text-3xl font-bold text-white font-display">0%</span>
+<span class="text-xs text-slate-500 uppercase tracking-wider">Fail Rate</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</body></html>

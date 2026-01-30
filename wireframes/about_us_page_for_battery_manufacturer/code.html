@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About VoltFuture - Powering the Transition</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#13ec6d",
+                "background-light": "#f8fcfa",
+                "background-dark": "#102218",
+                "card-bg": "#ffffff",
+                "text-main": "#0d1b13",
+                "text-muted": "#4c9a6c",
+                "border-light": "#e7f3ec",
+              },
+              fontFamily: {
+                "display": ["Space Grotesk", "sans-serif"],
+                "body": ["Noto Sans", "sans-serif"],
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+            },
+          },
+        }
+      </script>
+<style>
+        /* Custom scrollbar for subtle feel */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f8fcfa; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cfe7d9; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #13ec6d; 
+        }
+        
+        .bento-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .bento-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+        }
+    </style>
+</head>
+<body class="bg-background-light text-text-main font-display antialiased selection:bg-primary selection:text-text-main">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-border-light bg-background-light/80 backdrop-blur-md">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-0">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="flex items-center justify-between whitespace-nowrap py-3">
+<div class="flex items-center gap-4 text-text-main">
+<div class="size-8 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined !text-[32px]">bolt</span>
+</div>
+<h2 class="text-text-main text-xl font-bold leading-tight tracking-[-0.015em]">VoltFuture</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-text-main text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Products</a>
+<a class="text-text-main text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Technology</a>
+<a class="text-text-main text-sm font-bold leading-normal text-primary" href="#">About Us</a>
+<a class="text-text-main text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Careers</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-text-main text-sm font-bold leading-normal tracking-[0.015em] hover:brightness-105 transition-all shadow-[0_0_15px_rgba(19,236,109,0.3)]">
+<span class="truncate">Contact Sales</span>
+</button>
+</div>
+<!-- Mobile Menu Icon (Placeholder) -->
+<div class="md:hidden">
+<span class="material-symbols-outlined cursor-pointer">menu</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="w-full">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="@container">
+<div class="@[480px]:p-4">
+<div class="relative flex min-h-[480px] flex-col gap-6 overflow-hidden rounded-2xl bg-cover bg-center bg-no-repeat @[480px]:gap-8 items-center justify-center p-8 group shadow-xl" data-alt="Abstract visualization of sustainable energy flow, glowing green geometric lines on dark background" style='background-image: linear-gradient(rgba(13, 27, 19, 0.6) 0%, rgba(13, 27, 19, 0.8) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuApIgjidIUVboJoOpkiZ5o0itRyaKoKXU9YraOogLnrmFS8ui-TK0kNZneU0EsRI7bSyhMoiqqlmFlNC4i-KYdqhYE-nkLpEYCjIdxAkeDFlmNHUf9vFecuuw9Wgr6_Q1gTqkE_Z6I3oQGUr5oVp40SuPS6_XkV8A31bLsy5fLJq_Vfp-HHd7K3xaMuaezoMIzl5QLQS7HQNcbkt-mJ_U72NnG1s3PwjA9ISHFcgZ2OSy2jTwG3GZ3SXFkPxnvzAPiVSf1s7VhqHwE");'>
+<div class="flex flex-col gap-4 text-center z-10 max-w-[600px]">
+<div class="inline-flex items-center justify-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-primary backdrop-blur-sm self-center border border-white/10">
+<span class="flex h-2 w-2 rounded-full bg-primary animate-pulse"></span>
+                                            Engineering the Future
+                                        </div>
+<h1 class="text-white text-5xl font-black leading-[1.1] tracking-[-0.033em] @[480px]:text-6xl">
+                                            Powering the Transition
+                                        </h1>
+<h2 class="text-gray-200 text-lg font-normal leading-relaxed">
+                                            We engineer the world's most efficient sustainable energy storage systems, bridging the gap between nature and technology.
+                                        </h2>
+</div>
+<button class="z-10 flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-text-main text-base font-bold leading-normal tracking-[0.015em] hover:scale-105 transition-transform">
+<span class="truncate">Explore Our Technology</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Journey Header -->
+<section class="w-full">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="flex flex-col gap-2 px-4 pb-3 pt-5">
+<span class="text-sm font-bold uppercase tracking-wider text-text-muted">History</span>
+<h2 class="text-text-main text-[32px] font-bold leading-tight tracking-[-0.015em]">Our Journey</h2>
+<p class="text-text-main/70 max-w-[600px]">From a garage experiment to a global gigafactory, our mission has remained unchanged: decouple growth from carbon emissions.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Timeline -->
+<section class="w-full">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="grid grid-cols-[40px_1fr] gap-x-4 px-4">
+<!-- Item 1 -->
+<div class="flex flex-col items-center gap-1 pt-3">
+<div class="flex items-center justify-center size-10 rounded-full bg-white border border-border-light shadow-sm text-text-main z-10">
+<span class="material-symbols-outlined text-[20px]">garage</span>
+</div>
+<div class="w-[2px] bg-gradient-to-b from-border-light to-border-light h-full grow min-h-[40px]"></div>
+</div>
+<div class="flex flex-1 flex-col py-3 pb-10">
+<div class="bento-card bg-white p-6 rounded-xl border border-border-light">
+<div class="flex justify-between items-start mb-2">
+<p class="text-text-main text-lg font-bold leading-normal">Founded in a Garage</p>
+<span class="bg-background-light px-2 py-1 rounded text-xs font-bold text-text-muted border border-border-light">2018</span>
+</div>
+<p class="text-text-main/70 text-sm">Three engineers, one vision. The first prototype was built using recycled laptop batteries to prove circular economy viability.</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col items-center gap-1">
+<div class="w-[2px] bg-border-light h-2"></div>
+<div class="flex items-center justify-center size-10 rounded-full bg-white border border-border-light shadow-sm text-text-main z-10">
+<span class="material-symbols-outlined text-[20px]">battery_charging_full</span>
+</div>
+<div class="w-[2px] bg-border-light h-full grow min-h-[40px]"></div>
+</div>
+<div class="flex flex-1 flex-col py-3 pb-10">
+<div class="bento-card bg-white p-6 rounded-xl border border-border-light">
+<div class="flex justify-between items-start mb-2">
+<p class="text-text-main text-lg font-bold leading-normal">First Eco-Cell Prototype</p>
+<span class="bg-background-light px-2 py-1 rounded text-xs font-bold text-text-muted border border-border-light">2019</span>
+</div>
+<p class="text-text-main/70 text-sm">Achieved 20% higher density than market standard. The "Eco-Cell" architecture was patented this year.</p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex flex-col items-center gap-1">
+<div class="w-[2px] bg-border-light h-2"></div>
+<div class="flex items-center justify-center size-10 rounded-full bg-white border border-border-light shadow-sm text-text-main z-10">
+<span class="material-symbols-outlined text-[20px]">trending_up</span>
+</div>
+<div class="w-[2px] bg-border-light h-full grow min-h-[40px]"></div>
+</div>
+<div class="flex flex-1 flex-col py-3 pb-10">
+<div class="bento-card bg-white p-6 rounded-xl border border-border-light">
+<div class="flex justify-between items-start mb-2">
+<p class="text-text-main text-lg font-bold leading-normal">Series A Funding</p>
+<span class="bg-background-light px-2 py-1 rounded text-xs font-bold text-text-muted border border-border-light">2021</span>
+</div>
+<p class="text-text-main/70 text-sm">Secured $50M to scale production. Expanded the team from 10 to 100 dedicated specialists.</p>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="flex flex-col items-center gap-1 pb-3">
+<div class="w-[2px] bg-border-light h-2"></div>
+<div class="flex items-center justify-center size-10 rounded-full bg-primary border border-primary shadow-sm text-text-main z-10">
+<span class="material-symbols-outlined text-[20px]">factory</span>
+</div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<div class="bento-card bg-white p-6 rounded-xl border-l-4 border-l-primary border-y border-r border-y-border-light border-r-border-light">
+<div class="flex justify-between items-start mb-2">
+<p class="text-text-main text-lg font-bold leading-normal">Gigafactory Opening</p>
+<span class="bg-primary/20 px-2 py-1 rounded text-xs font-bold text-text-main border border-primary/20">2023</span>
+</div>
+<p class="text-text-main/70 text-sm">Opened our net-zero manufacturing plant in Nevada. Capable of producing 5GWh annually.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Bento Grid -->
+<section class="w-full py-10">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-40 flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="flex flex-col gap-2 px-4 pb-6">
+<span class="text-sm font-bold uppercase tracking-wider text-text-muted">Impact</span>
+<h2 class="text-text-main text-[32px] font-bold leading-tight tracking-[-0.015em]">Impact by the Numbers</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 h-auto md:h-[400px]">
+<!-- Big Card 1 -->
+<div class="md:col-span-2 md:row-span-2 bento-card relative overflow-hidden rounded-2xl bg-text-main p-8 flex flex-col justify-between group">
+<div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[180px] text-primary">public</span>
+</div>
+<div>
+<p class="text-primary font-medium mb-1">Carbon Offset</p>
+<h3 class="text-white text-6xl md:text-7xl font-bold tracking-tighter">1.2M+</h3>
+<p class="text-gray-400 mt-2">Tons of CO2 eliminated</p>
+</div>
+<div class="w-full bg-gray-800 h-1.5 rounded-full mt-8 overflow-hidden">
+<div class="bg-primary h-full w-[85%] rounded-full"></div>
+</div>
+</div>
+<!-- Small Card 1 -->
+<div class="bento-card rounded-2xl bg-white border border-border-light p-6 flex flex-col justify-center gap-2">
+<div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-2">
+<span class="material-symbols-outlined">recycling</span>
+</div>
+<h3 class="text-text-main text-3xl font-bold">98%</h3>
+<p class="text-text-main/60 text-sm font-medium">Recyclable Materials</p>
+</div>
+<!-- Small Card 2 -->
+<div class="bento-card rounded-2xl bg-primary p-6 flex flex-col justify-center gap-2 text-text-main">
+<div class="size-10 rounded-full bg-black/10 flex items-center justify-center text-text-main mb-2">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+<h3 class="text-text-main text-3xl font-bold">500k+</h3>
+<p class="text-text-main/80 text-sm font-medium">Units Shipped</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Values Section -->
+<section class="w-full py-10 bg-white">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-40 flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="flex flex-col gap-2 px-4 pb-8 pt-5 text-center">
+<span class="text-sm font-bold uppercase tracking-wider text-text-muted">Philosophy</span>
+<h2 class="text-text-main text-[32px] font-bold leading-tight tracking-[-0.015em]">Core Values</h2>
+<p class="text-text-main/60 max-w-lg mx-auto">The principles that guide every decision we make.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+<!-- Value 1 -->
+<div class="flex flex-col gap-4 p-6 rounded-xl bg-background-light border border-border-light hover:border-primary/50 transition-colors">
+<div class="size-12 rounded-lg bg-white border border-border-light flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-text-muted">eco</span>
+</div>
+<div>
+<h3 class="text-lg font-bold text-text-main mb-2">Radical Sustainability</h3>
+<p class="text-sm text-text-main/70 leading-relaxed">We don't just minimize harm; we actively restore. Every battery is designed with its end-of-life in mind.</p>
+</div>
+</div>
+<!-- Value 2 -->
+<div class="flex flex-col gap-4 p-6 rounded-xl bg-background-light border border-border-light hover:border-primary/50 transition-colors">
+<div class="size-12 rounded-lg bg-white border border-border-light flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-text-muted">precision_manufacturing</span>
+</div>
+<div>
+<h3 class="text-lg font-bold text-text-main mb-2">Atomic Precision</h3>
+<p class="text-sm text-text-main/70 leading-relaxed">Safety is non-negotiable. We manufacture to micron-level tolerances to ensure reliability.</p>
+</div>
+</div>
+<!-- Value 3 -->
+<div class="flex flex-col gap-4 p-6 rounded-xl bg-background-light border border-border-light hover:border-primary/50 transition-colors">
+<div class="size-12 rounded-lg bg-white border border-border-light flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-text-muted">all_inclusive</span>
+</div>
+<div>
+<h3 class="text-lg font-bold text-text-main mb-2">Designed for Longevity</h3>
+<p class="text-sm text-text-main/70 leading-relaxed">Planned obsolescence is our enemy. We build systems meant to last decades, not years.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Section -->
+<section class="w-full py-16">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-40 flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="flex flex-col md:flex-row justify-between items-end px-4 pb-8 pt-5 gap-4">
+<div class="flex flex-col gap-2">
+<span class="text-sm font-bold uppercase tracking-wider text-text-muted">Team</span>
+<h2 class="text-text-main text-[32px] font-bold leading-tight tracking-[-0.015em]">Meet the Visionaries</h2>
+</div>
+<a class="text-text-main text-sm font-bold border-b-2 border-primary pb-0.5 hover:text-primary transition-colors" href="#">View All Careers</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4">
+<!-- Team Member 1 -->
+<div class="group relative flex flex-col overflow-hidden rounded-xl bg-white border border-border-light shadow-sm hover:shadow-lg transition-all duration-300">
+<div class="aspect-[4/3] w-full overflow-hidden bg-gray-100">
+<img alt="Elena Vance, CEO" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Portrait of a professional woman in business attire smiling in a bright office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_E2LPT9Efs6oNgYT61h1nWd31QqErgg7J-viv3ty_9ZJVaWSjwV2PQmfFdAWa3RhSkgl8CLTS7j_ifnzOUkoLB_hd0uhYotbBJQibumEcWaN_X_4rndmKeNj8XGu78rT5zF0i0rQSObeOOYFxo5ZV_GrVQQiWy1uZg21yc7sPmWkuWVEU5KXEg53xjsV7mpB3GK6qlFaR1hRAjmT_SDmCoJ_v4HlSGP8sbcjWsk7ADlg2QCxcT6p3vlUji3WY3-83YkQMTXKU370"/>
+<!-- Hover Overlay -->
+<div class="absolute inset-0 bg-text-main/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-6 text-center">
+<p class="text-white font-medium text-sm">"My favorite sustainable habit is urban gardening. Watching things grow reminds me why we do this."</p>
+</div>
+</div>
+<div class="p-4 bg-white z-10 relative">
+<h3 class="text-lg font-bold text-text-main">Elena Vance</h3>
+<p class="text-sm text-text-muted font-medium">CEO &amp; Co-Founder</p>
+</div>
+</div>
+<!-- Team Member 2 -->
+<div class="group relative flex flex-col overflow-hidden rounded-xl bg-white border border-border-light shadow-sm hover:shadow-lg transition-all duration-300">
+<div class="aspect-[4/3] w-full overflow-hidden bg-gray-100">
+<img alt="Dr. Aris Thorne, CTO" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Portrait of a professional man in a suit standing confidently" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMazpmWs-9495oxMnn-U8lhDiavxTq4nJKpQzWlYRf41yavDrcMMS_a5IcSJVraUWHUSubJ6oZ3gZyHTXwLSIAEpKmgfxX2_SujPk-QWPmMqvdamaaxcpTc7YYyzndRKYa637mjecJeGOse-3XxQU9MGjqXKha3V1-X0u1i4vPq6IP4VlYSorDDgBpdPsFBcPEE6xDbTvhBEPmZWE9bhBJaW6OnnwjfBnCR3FoE1x17WCFJ5ptVK2h2dYWT8N7hHV6FGGmWYZnjtI"/>
+<div class="absolute inset-0 bg-text-main/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-6 text-center">
+<p class="text-white font-medium text-sm">"I commute exclusively by electric bike. It's not just clean; it's freedom."</p>
+</div>
+</div>
+<div class="p-4 bg-white z-10 relative">
+<h3 class="text-lg font-bold text-text-main">Dr. Aris Thorne</h3>
+<p class="text-sm text-text-muted font-medium">CTO &amp; Lead Architect</p>
+</div>
+</div>
+<!-- Team Member 3 -->
+<div class="group relative flex flex-col overflow-hidden rounded-xl bg-white border border-border-light shadow-sm hover:shadow-lg transition-all duration-300">
+<div class="aspect-[4/3] w-full overflow-hidden bg-gray-100">
+<img alt="Marcus Jin, Head of Sustainability" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Portrait of a man in smart casual wear looking friendly and professional" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7SThv4xfTg0eWean4wbz9NXyfahYKsENwkqAKsWR9E_rdifgTwJhr6sNCa4lJuiMTDV4P-1-ONQJ4B8mICyv_sbCkRRswsESEY6JILSNI5-bmPknPluINuafANsb4XRb0snmZXqFGU64OSIfxkSDmG5MBbn6qOzTVbaEctJMjB1vAu7Y9qVRmjrHFiikoj6vAd-2jcgvq7GqK_gHcvXlzJFZGGw-fFNaW8fdwMOGUSHVRGZeSiCzqwKSJUKaGdb1gyGAx8_T5n7E"/>
+<div class="absolute inset-0 bg-text-main/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-6 text-center">
+<p class="text-white font-medium text-sm">"Zero-waste cooking is my passion. Nothing goes to the bin that can be reused."</p>
+</div>
+</div>
+<div class="p-4 bg-white z-10 relative">
+<h3 class="text-lg font-bold text-text-main">Marcus Jin</h3>
+<p class="text-sm text-text-muted font-medium">Head of Sustainability</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Footer -->
+<footer class="w-full bg-text-main py-20">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-40 flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1 items-center text-center">
+<div class="size-16 rounded-full bg-primary/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">electric_bolt</span>
+</div>
+<h2 class="text-white text-4xl md:text-5xl font-bold tracking-tight mb-6">Ready to energize the future?</h2>
+<p class="text-gray-400 max-w-lg mb-8 text-lg">Join us in building the infrastructure for a sustainable planet. Whether you're a partner or a future employee, we want to hear from you.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-text-main text-base font-bold leading-normal tracking-[0.015em] hover:bg-white hover:text-text-main transition-colors">
+                                Partner with Us
+                            </button>
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-transparent border border-gray-600 text-white text-base font-bold leading-normal tracking-[0.015em] hover:border-primary hover:text-primary transition-colors">
+                                Open Positions
+                            </button>
+</div>
+<div class="mt-20 pt-8 border-t border-gray-800 w-full flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+<p>© 2024 VoltFuture Inc. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-white transition-colors" href="#">Privacy</a>
+<a class="hover:text-white transition-colors" href="#">Terms</a>
+<a class="hover:text-white transition-colors" href="#">Twitter</a>
+<a class="hover:text-white transition-colors" href="#">LinkedIn</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

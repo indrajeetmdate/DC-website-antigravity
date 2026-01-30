@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Battery Solutions - Product Catalog</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;family=Noto+Sans:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec6d",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#102218",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1a2c22",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Smooth scrolling for anchor links */
+        html { scroll-behavior: smooth; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display antialiased selection:bg-primary selection:text-background-dark overflow-x-hidden w-full">
+<!-- Top Navigation -->
+<nav class="sticky top-0 z-50 w-full border-b border-gray-200 dark:border-gray-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex h-16 items-center justify-between">
+<!-- Logo -->
+<div class="flex items-center gap-3">
+<div class="flex size-8 items-center justify-center rounded-lg bg-primary text-background-dark">
+<span class="material-symbols-outlined text-2xl">bolt</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">Battery Solutions</span>
+</div>
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 transition-colors" href="#">Technology</a>
+<a class="text-sm font-medium text-slate-900 dark:text-white" href="#products">Products</a>
+<a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 transition-colors" href="#">Sustainability</a>
+<a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 transition-colors" href="#">Company</a>
+</div>
+<!-- CTA -->
+<div class="flex items-center gap-4">
+<button class="hidden sm:flex h-10 items-center justify-center rounded-lg bg-primary px-5 text-sm font-bold text-background-dark transition-transform hover:scale-105 active:scale-95">
+                        Get Quote
+                    </button>
+<!-- Mobile Menu Icon -->
+<button class="md:hidden p-2 text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative pt-20 pb-24 md:pt-32 md:pb-40 overflow-hidden">
+<!-- Abstract Background Decoration -->
+<div class="absolute inset-0 z-0 pointer-events-none opacity-40" style="background-image: radial-gradient(#13ec6d 1px, transparent 1px); background-size: 32px 32px; mask-image: linear-gradient(to bottom, black 50%, transparent 100%);"></div>
+<div class="relative z-10 max-w-[960px] mx-auto px-6 text-center">
+<div class="inline-flex items-center rounded-full border border-gray-200 bg-white px-3 py-1 text-sm font-medium text-slate-600 dark:border-gray-800 dark:bg-surface-dark dark:text-slate-300 mb-8 shadow-sm">
+<span class="flex h-2 w-2 rounded-full bg-primary mr-2"></span>
+                Next-Gen Lithium Technology
+            </div>
+<h1 class="text-5xl md:text-7xl font-bold tracking-tighter text-slate-900 dark:text-white mb-6">
+                Energy for <br class="hidden md:block"/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-600">Every Move</span>
+</h1>
+<p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto font-body leading-relaxed mb-10">
+                Advanced lithium-ion solutions for modern mobility and infrastructure. 
+                Powering the future with clean, reliable, and renewable technology designed for heavy-duty applications.
+            </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="h-12 px-8 rounded-lg bg-slate-900 text-white dark:bg-white dark:text-background-dark font-bold text-base hover:opacity-90 transition-opacity w-full sm:w-auto">
+                    Explore Products
+                </button>
+<button class="h-12 px-8 rounded-lg border border-gray-200 bg-white text-slate-900 dark:border-gray-700 dark:bg-transparent dark:text-white font-medium text-base hover:bg-gray-50 dark:hover:bg-surface-dark transition-colors flex items-center justify-center gap-2 w-full sm:w-auto">
+<span class="material-symbols-outlined text-[20px]">play_circle</span>
+                    Watch Video
+                </button>
+</div>
+</div>
+</section>
+<!-- Main Content with Sticky Sidebar -->
+<div class="layout-container px-4 md:px-8 lg:px-12 py-12 max-w-[1440px] mx-auto flex flex-col lg:flex-row gap-16 relative" id="products">
+<!-- Sticky Sidebar Navigation (Desktop) -->
+<aside class="hidden lg:flex w-64 shrink-0 flex-col gap-2 sticky top-28 h-fit">
+<h3 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-4 px-3">Categories</h3>
+<a class="group flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-gray-100 hover:text-primary dark:text-slate-400 dark:hover:bg-surface-dark transition-all" href="#solar">
+<span class="material-symbols-outlined text-[20px] text-slate-400 group-hover:text-primary transition-colors">wb_sunny</span>
+                Solar Street-Lights
+            </a>
+<a class="group flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-gray-100 hover:text-primary dark:text-slate-400 dark:hover:bg-surface-dark transition-all" href="#2wheelers">
+<span class="material-symbols-outlined text-[20px] text-slate-400 group-hover:text-primary transition-colors">two_wheeler</span>
+                2-Wheelers
+            </a>
+<a class="group flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-gray-100 hover:text-primary dark:text-slate-400 dark:hover:bg-surface-dark transition-all" href="#3wheelers">
+<span class="material-symbols-outlined text-[20px] text-slate-400 group-hover:text-primary transition-colors">electric_rickshaw</span>
+                3-Wheelers
+            </a>
+<a class="group flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-gray-100 hover:text-primary dark:text-slate-400 dark:hover:bg-surface-dark transition-all" href="#ups">
+<span class="material-symbols-outlined text-[20px] text-slate-400 group-hover:text-primary transition-colors">battery_charging_full</span>
+                UPS &amp; Inverters
+            </a>
+<a class="group flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-gray-100 hover:text-primary dark:text-slate-400 dark:hover:bg-surface-dark transition-all" href="#custom">
+<span class="material-symbols-outlined text-[20px] text-slate-400 group-hover:text-primary transition-colors">architecture</span>
+                Custom Solutions
+            </a>
+<div class="mt-8 p-4 rounded-xl bg-primary/10 border border-primary/20">
+<p class="text-xs font-bold text-slate-900 dark:text-white mb-2">Need a catalog?</p>
+<button class="text-xs font-bold text-primary hover:underline flex items-center gap-1">
+                    Download PDF <span class="material-symbols-outlined text-[14px]">download</span>
+</button>
+</div>
+</aside>
+<!-- Product Sections Scroll Container -->
+<main class="flex-1 flex flex-col gap-20 lg:gap-32">
+<!-- Section: Solar Street-Lights -->
+<section class="scroll-mt-32 group" id="solar">
+<div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-8 items-center">
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center justify-center size-8 rounded-full bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400">
+<span class="material-symbols-outlined text-[18px]">wb_sunny</span>
+</span>
+<span class="text-sm font-bold uppercase tracking-wider text-slate-500">Infrastructure</span>
+</div>
+<h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">Solar Street-Lights</h2>
+<div class="space-y-4 font-body">
+<div class="p-4 rounded-xl bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 shadow-sm transition-transform hover:-translate-y-1 duration-300">
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-red-500 mt-1">error</span>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-white text-sm">The Problem</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Dark streets create safety hazards, while traditional grid lighting incurs massive monthly energy costs and maintenance fees.</p>
+</div>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-primary/5 dark:bg-primary/10 border border-primary/20 shadow-sm transition-transform hover:-translate-y-1 duration-300">
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-white text-sm">Our Solution</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Self-sustaining LiFePO4 packs designed for dusk-to-dawn illumination. Zero grid dependency, 5+ year lifespan, and weather-proof casing.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-4 flex gap-4">
+<button class="flex items-center gap-2 px-6 py-3 bg-slate-900 text-white dark:bg-white dark:text-background-dark rounded-lg font-bold text-sm hover:opacity-90">
+                                View Specifications
+                                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="w-full aspect-[4/3] rounded-2xl overflow-hidden relative shadow-2xl shadow-yellow-500/10">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10 flex flex-col justify-end p-6">
+<p class="text-white font-bold text-lg">Smart City Ready</p>
+<p class="text-white/80 text-sm font-body">Deployed in over 50 municipalities.</p>
+</div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Modern solar street lamps illuminating a clean city street at twilight" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDitAP3bobNXJ5Hlz6VB3YFoWBOnAxGuSKRRkYSrND89XBPaD4BNlXGcUGrT9pya9gobQ9IP49DZyIXouhOcMBtWrgNGIIGCxMp0ioAhHLoODkM7BN87imsCh6zVJK16xbBEOZKWU9w0c-8CwSB6_0AyXmDCM1B9SxWjOvdR2U785JZQQG5et1db1ZIbqKXqcGl0baaFmbNHcRaze7mfYBKvAjSVrqC-BL7H7RlScBl_LevZPy-mnFP0VBJHM-OCuLgILSfrnbVu-4');"></div>
+</div>
+</div>
+</section>
+<!-- Section: 2-Wheelers -->
+<section class="scroll-mt-32 group" id="2wheelers">
+<div class="flex flex-col lg:grid lg:grid-cols-2 gap-8 items-center">
+<div class="w-full aspect-[4/3] rounded-2xl overflow-hidden relative shadow-2xl shadow-primary/10 order-first">
+<div class="absolute top-4 left-4 z-20 bg-white/90 dark:bg-black/80 backdrop-blur px-3 py-1 rounded-full text-xs font-bold border border-gray-200 dark:border-gray-700">
+                            Fast Charging Capable
+                        </div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Close up of a modern electric motorcycle battery pack and motor" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCbCWGJuGKV3nG3Ci65nCsAgs10udbJdn0nI8b71cY6MAONsoz4R9DFeHC_CYJrSHkdJQKNrbozueyfZAuNjw7eDw-O5TxN49pwGXFp5StMisqTJn0CH8tuIdEJzLPR7e_Calw8_4rGyvu6htOWqntubOp3fEd2X-Llkm4MG-1D4xl5HKOOfI48xWwdIUz9O2AMQ1RoPRH2egjpV1FpdihMM6yWHuiAVJXb7XfZr3FmaeLSCOi3o0lKV_VWyHxYTFu1NzLkCzOWh4w');"></div>
+</div>
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center justify-center size-8 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400">
+<span class="material-symbols-outlined text-[18px]">two_wheeler</span>
+</span>
+<span class="text-sm font-bold uppercase tracking-wider text-slate-500">Mobility</span>
+</div>
+<h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">2-Wheelers (E-Bikes)</h2>
+<div class="space-y-4 font-body">
+<div class="p-4 rounded-xl bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 shadow-sm transition-transform hover:-translate-y-1 duration-300">
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-red-500 mt-1">battery_alert</span>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-white text-sm">The Problem</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Range anxiety prevents adoption. Riders fear running out of power mid-commute and waiting hours to recharge.</p>
+</div>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-primary/5 dark:bg-primary/10 border border-primary/20 shadow-sm transition-transform hover:-translate-y-1 duration-300">
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary mt-1">bolt</span>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-white text-sm">Our Solution</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400 mt-1">High-density NMC packs that support fast charging (0-80% in 45 mins). Compact, lightweight, and swappable designs available.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-4 flex gap-4">
+<button class="flex items-center gap-2 px-6 py-3 bg-slate-900 text-white dark:bg-white dark:text-background-dark rounded-lg font-bold text-sm hover:opacity-90">
+                                View Specifications
+                                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: 3-Wheelers -->
+<section class="scroll-mt-32 group" id="3wheelers">
+<div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-8 items-center">
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center justify-center size-8 rounded-full bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400">
+<span class="material-symbols-outlined text-[18px]">electric_rickshaw</span>
+</span>
+<span class="text-sm font-bold uppercase tracking-wider text-slate-500">Commercial</span>
+</div>
+<h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">3-Wheelers (E-Rickshaw)</h2>
+<div class="space-y-4 font-body">
+<div class="p-4 rounded-xl bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 shadow-sm transition-transform hover:-translate-y-1 duration-300">
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-red-500 mt-1">trending_down</span>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-white text-sm">The Problem</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Heavy passenger loads drain standard batteries quickly, reducing daily income for drivers.</p>
+</div>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-primary/5 dark:bg-primary/10 border border-primary/20 shadow-sm transition-transform hover:-translate-y-1 duration-300">
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary mt-1">fitness_center</span>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-white text-sm">Our Solution</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Torque-optimized iron-phosphate batteries built for heavy-duty daily hauling. Consistent power output even under maximum load.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-4 flex gap-4">
+<button class="flex items-center gap-2 px-6 py-3 bg-slate-900 text-white dark:bg-white dark:text-background-dark rounded-lg font-bold text-sm hover:opacity-90">
+                                View Specifications
+                                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="w-full aspect-[4/3] rounded-2xl overflow-hidden relative shadow-2xl shadow-orange-500/10">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Yellow electric auto rickshaw driving on a busy street" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDpDiTiEiKPRMGjGgNkS6xzI_10f0ziOQ62Xd7383dyMjB9wtcY0yi_QbqUbAbQeOwwEbdzA6m4VFngLvHTRbfApWvhlJPBCNAg8An0-qUw5x5f8UQ63e6wiEqzH_K_lYIbwBqprGjyt3dnDPnk-BLrre8KZWgWdv8i2ZMEdHbuSOazH7WAY_ytglWcjS-ljmTy6l0kfqAuGaOj1Kf-eoYBdNXbE3zV3R1EXHwSFG1AAv2DqeMPoA2L4-jJiSHaXXbqJaWP3I0_BBs');"></div>
+</div>
+</div>
+</section>
+<!-- Section: UPS & Inverters -->
+<section class="scroll-mt-32 group" id="ups">
+<div class="flex flex-col lg:grid lg:grid-cols-2 gap-8 items-center">
+<div class="w-full aspect-[4/3] rounded-2xl overflow-hidden relative shadow-2xl shadow-indigo-500/10 order-first">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Sleek white home battery backup system mounted on a garage wall" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCppIXCaHFEugRMIuKZjGa846lxWeIMcKiQ2M5nyMYpIOEICjxXTpvul7hswd8cRKz9w3OQ9nToEbaKo0gjOsL4QHTmPxZl---1xjSt73fOcz9oBff0TRoUxdT7a6vjEfzTuUltgqEbMOmjuHVnNK7tX6b3F_P-hN2Mx65cwsIfYsMLftOsFW8zKA4kZ6a3uy8jSYQf-tk6qSPs9kVwBrD8Gt7uwiZs4UdFlhU2BOJD0IbILauZ4dTCJ92H0uhlDF_EeM_dCxBLX3g');"></div>
+</div>
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center justify-center size-8 rounded-full bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-400">
+<span class="material-symbols-outlined text-[18px]">home_iot_device</span>
+</span>
+<span class="text-sm font-bold uppercase tracking-wider text-slate-500">Residential</span>
+</div>
+<h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">UPS &amp; Inverters</h2>
+<div class="space-y-4 font-body">
+<div class="p-4 rounded-xl bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 shadow-sm transition-transform hover:-translate-y-1 duration-300">
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-red-500 mt-1">power_off</span>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-white text-sm">The Problem</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Unpredictable power outages interrupt remote work, damage electronics, and disrupt home life.</p>
+</div>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-primary/5 dark:bg-primary/10 border border-primary/20 shadow-sm transition-transform hover:-translate-y-1 duration-300">
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary mt-1">offline_bolt</span>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-white text-sm">Our Solution</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Silent, instant backup power. Our compact inverter batteries kick in within milliseconds, keeping your Wi-Fi and essentials running.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-4 flex gap-4">
+<button class="flex items-center gap-2 px-6 py-3 bg-slate-900 text-white dark:bg-white dark:text-background-dark rounded-lg font-bold text-sm hover:opacity-90">
+                                View Specifications
+                                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Custom Solutions (Bento Grid) -->
+<section class="scroll-mt-32" id="custom">
+<div class="mb-10 text-center lg:text-left">
+<span class="inline-flex items-center justify-center px-3 py-1 rounded-full bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300 text-xs font-bold uppercase tracking-wider mb-4">
+                        R&amp;D Lab
+                    </span>
+<h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">Custom Solutions</h2>
+<p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl font-body">Don't fit the mold? We engineer packs to your exact voltage, capacity, and dimensional specifications.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[240px]">
+<!-- Card 1: Main Feature -->
+<div class="md:col-span-2 rounded-2xl bg-slate-900 dark:bg-surface-dark p-8 flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">architecture</span>
+<h3 class="text-2xl font-bold text-white mb-2">3D CAD Modeling</h3>
+<p class="text-slate-300 font-body text-sm max-w-sm">We prototype your battery casing to fit perfectly within your device's unique geometry.</p>
+</div>
+<div class="absolute right-0 bottom-0 w-48 h-48 opacity-20 translate-y-12 translate-x-12">
+<span class="material-symbols-outlined text-[200px] text-white">view_in_ar</span>
+</div>
+</div>
+<!-- Card 2: BMS -->
+<div class="rounded-2xl bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-800 p-6 flex flex-col justify-center items-center text-center relative overflow-hidden group hover:border-primary/50 transition-colors">
+<div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-full mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl text-blue-600 dark:text-blue-400">memory</span>
+</div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Smart BMS</h3>
+<p class="text-slate-500 dark:text-slate-400 font-body text-sm">Bluetooth enabled monitoring systems.</p>
+</div>
+<!-- Card 3: Thermal -->
+<div class="rounded-2xl bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-800 p-6 flex flex-col justify-center items-center text-center relative overflow-hidden group hover:border-primary/50 transition-colors">
+<div class="bg-red-50 dark:bg-red-900/20 p-4 rounded-full mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl text-red-600 dark:text-red-400">thermostat</span>
+</div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Thermal Mgmt</h3>
+<p class="text-slate-500 dark:text-slate-400 font-body text-sm">Active cooling for high-performance packs.</p>
+</div>
+<!-- Card 4: Action -->
+<div class="md:col-span-2 rounded-2xl bg-primary flex flex-col md:flex-row items-center justify-between p-8 relative overflow-hidden">
+<div class="relative z-10">
+<h3 class="text-2xl font-bold text-background-dark mb-2">Start a Custom Project</h3>
+<p class="text-background-dark/80 font-body text-sm max-w-xs">Our engineers are ready to review your requirements.</p>
+</div>
+<button class="relative z-10 mt-6 md:mt-0 bg-background-dark text-white px-6 py-3 rounded-lg font-bold text-sm hover:bg-black transition-colors">
+                            Contact Engineering
+                        </button>
+<!-- Decorative lines -->
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: repeating-linear-gradient(45deg, #000 0px, #000 10px, transparent 10px, transparent 20px);"></div>
+</div>
+</div>
+</section>
+</main>
+</div>
+<!-- Footer CTA -->
+<section class="border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-surface-dark py-16 mt-12">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<h2 class="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">Ready to power the future?</h2>
+<p class="text-lg text-slate-600 dark:text-slate-400 font-body mb-8 max-w-xl mx-auto">Get a detailed quote for your fleet, infrastructure project, or custom application today.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="flex items-center justify-center gap-2 h-14 px-8 rounded-full bg-primary text-background-dark font-bold text-lg hover:shadow-lg hover:shadow-primary/30 transition-all hover:-translate-y-1">
+                    Request a Quote
+                    <span class="material-symbols-outlined">send</span>
+</button>
+<button class="flex items-center justify-center gap-2 h-14 px-8 rounded-full border border-gray-200 dark:border-gray-700 text-slate-900 dark:text-white font-medium text-lg hover:bg-gray-50 dark:hover:bg-background-dark transition-all">
+                    Talk to Sales
+                </button>
+</div>
+<div class="mt-12 flex flex-wrap justify-center gap-8 text-slate-400 dark:text-slate-600 grayscale opacity-70">
+<!-- Placeholder Company Logos -->
+<span class="text-xl font-bold">SOLARCO</span>
+<span class="text-xl font-bold">EV-MOTO</span>
+<span class="text-xl font-bold">GRID-X</span>
+<span class="text-xl font-bold">POWERWALLS</span>
+</div>
+</div>
+</section>
+</body></html>
