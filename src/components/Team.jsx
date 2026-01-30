@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import { Card, CardBody } from '@heroui/react'
 import { Briefcase, Code, Scale, DollarSign, Cog } from 'lucide-react'
 
 export default function Team() {
@@ -71,34 +70,31 @@ export default function Team() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1 }}
-                                whileHover={{ y: -10 }}
                                 className="pt-12"
                             >
-                                <Card className="h-full hover:shadow-2xl transition-all duration-300 border border-gray-200 relative overflow-visible">
-                                    <CardBody className="p-6 text-center">
-                                        {/* Icon */}
-                                        <div className="flex justify-center mb-4 -mt-16">
-                                            <div className={`w-20 h-20 bg-gradient-to-br ${member.color} rounded-full flex items-center justify-center shadow-xl ring-4 ring-white`}>
-                                                <Icon className="w-10 h-10 text-white" />
-                                            </div>
+                                <div className="h-full bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 relative group">
+                                    {/* Icon */}
+                                    <div className="flex justify-center mb-4 -mt-16">
+                                        <div className={`w-20 h-20 bg-gradient-to-br ${member.color} rounded-full flex items-center justify-center shadow-xl ring-4 ring-white group-hover:scale-110 transition-transform duration-300`}>
+                                            <Icon className="w-10 h-10 text-white" />
                                         </div>
+                                    </div>
 
-                                        {/* Name */}
-                                        <h3 className="font-display font-bold text-brand-dark-900 text-lg mb-1">
-                                            {member.name}
-                                        </h3>
+                                    {/* Name */}
+                                    <h3 className="font-display font-bold text-brand-dark-900 text-lg mb-1">
+                                        {member.name}
+                                    </h3>
 
-                                        {/* Role */}
-                                        <p className="text-brand-green-600 font-semibold text-sm mb-3">
-                                            {member.role}
-                                        </p>
+                                    {/* Role */}
+                                    <p className="text-brand-green-600 font-semibold text-sm mb-3 uppercase tracking-wide">
+                                        {member.role}
+                                    </p>
 
-                                        {/* Description */}
-                                        <p className="text-gray-600 text-sm leading-relaxed">
-                                            {member.description}
-                                        </p>
-                                    </CardBody>
-                                </Card>
+                                    {/* Description */}
+                                    <p className="text-gray-600 text-sm leading-relaxed">
+                                        {member.description}
+                                    </p>
+                                </div>
                             </motion.div>
                         )
                     })}
